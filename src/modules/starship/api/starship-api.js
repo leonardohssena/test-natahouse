@@ -8,7 +8,7 @@ const calcStarshipStops = async (mglt, page = 1, limit = 10) => {
       name,
       consumables: consumables || 'Desconhecido',
       MGLT: MGLT || 'Desconhecido',
-      stops: consumablesInHours && MGLT ? Math.round(mglt / MGLT / consumablesInHours) : 'Desconhecido'
+      stops: consumablesInHours && MGLT ? Math.floor(mglt / MGLT / consumablesInHours) : 'Desconhecido'
     }
   })
 
