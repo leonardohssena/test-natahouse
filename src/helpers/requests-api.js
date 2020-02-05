@@ -5,7 +5,7 @@ import config from '../config'
 /**
  * @name requestsApi
  *
- * Função de conexão a api da is2b
+ * Função de conexão a swapi
  *
  * @param method Metodo da conexão (GET/POST)
  * @param url URL de envio
@@ -43,7 +43,6 @@ const requestsApi = async (method, url, token, params, data) => {
     const responseApi = await axios.request(configResquest)
     return responseApi.data
   } catch (error) {
-    console.error(error)
     throw error
   }
 }

@@ -6,6 +6,12 @@ import {
   createOrUpdateStarshipByName
 } from './data-access'
 
+/**
+ * @name updateAllStarships
+ *
+ * Função para atualizar todos os starships junto a swapi
+ *
+ */
 const updateAllStarships = async () => {
   const loggerInfo = { name: 'updateAllStarships', params: {} }
 

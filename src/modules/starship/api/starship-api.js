@@ -1,7 +1,7 @@
 import { findStarshipPaginate } from '../../../helpers/data-access'
 
 const calcStarshipStops = async (mglt, page = 1, limit = 10) => {
-  const starships = await findStarshipPaginate({}, page, limit)
+  const starships = await findStarshipPaginate({}, page, Number(limit))
 
   const docs = starships.docs.map(({ name, consumables, consumablesInHours, MGLT }) => {
     return {

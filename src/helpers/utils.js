@@ -11,6 +11,16 @@ const toHours = {
   years: 262800
 }
 
+/**
+ * @name timeToHours
+ *
+ * Função para transformar um certo horario no seu referencial em horas
+ *
+ * @param time Horario a ser transformado
+ * @param type Tipo do horario a ser transformado
+ *
+ * @returns Valor em horas do horario
+ */
 const timeToHours = (time, type) => {
   return time * toHours[type]
 }

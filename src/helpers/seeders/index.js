@@ -1,6 +1,12 @@
 import logger from '../logger'
 import seederStarships from './starships'
 
+/**
+ * @name seeder
+ *
+ * Função para popular os dados no banco
+ *
+ */
 const seeder = async () => {
   const loggerInfo = { name: 'seeder', params: {} }
   logger.info(loggerInfo.name, loggerInfo.params)
